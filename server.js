@@ -19,6 +19,7 @@ app.use('*', cors({
     credentials : true,
     methods : ['GET','POST','UPDATE','DELETE']
 }));
+console.log(process.env.ORIGIN)
 
 //db config
 mongoose.connect(process.env.MONGO_URI, {
